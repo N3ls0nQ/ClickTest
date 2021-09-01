@@ -76,6 +76,11 @@ namespace ClickTestGUI
             if (!clickTest.timer.IsEnabled)
             {
                 clickTest.Restart();
+                TestButton.IsEnabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Cannot restart while running!");
             }
             
         }

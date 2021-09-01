@@ -47,6 +47,7 @@ namespace ClickTestGUI.Core
 
         public void Restart()
         {
+            isTimerRunning = false;
             Debug.Print("Restarting...");
         }
 
